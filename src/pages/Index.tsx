@@ -273,6 +273,220 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Subscription Plans Section */}
+      <section id="pricing" className="py-16 bg-gradient-to-br from-gray-50 to-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-display font-bold text-wrest-dark mb-4">Абонементы</h2>
+            <p className="text-lg text-wrest-gray">Выберите подходящий тарифный план для ваших тренировок</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Basic Plan */}
+            <Card className="relative overflow-hidden hover:shadow-xl transition-all duration-300 border-2">
+              <CardHeader className="text-center pb-8">
+                <div className="w-16 h-16 bg-gradient-to-r from-gray-500 to-gray-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <Icon name="Shield" className="text-white" size={24} />
+                </div>
+                <CardTitle className="text-2xl font-display">СТАРТ</CardTitle>
+                <CardDescription>Для начинающих спортсменов</CardDescription>
+                <div className="mt-4">
+                  <span className="text-4xl font-bold text-wrest-dark">3,500₽</span>
+                  <span className="text-wrest-gray">/месяц</span>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <Icon name="Check" className="text-green-500" size={18} />
+                  <span className="text-sm">8 групповых тренировок</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Icon name="Check" className="text-green-500" size={18} />
+                  <span className="text-sm">Доступ к раздевалкам</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Icon name="Check" className="text-green-500" size={18} />
+                  <span className="text-sm">Консультация тренера</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Icon name="X" className="text-red-400" size={18} />
+                  <span className="text-sm text-gray-400">Персональные тренировки</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Icon name="X" className="text-red-400" size={18} />
+                  <span className="text-sm text-gray-400">Участие в соревнованиях</span>
+                </div>
+                <Button className="w-full mt-6" variant="outline">
+                  Выбрать план
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Pro Plan - Most Popular */}
+            <Card className="relative overflow-hidden hover:shadow-xl transition-all duration-300 border-2 border-primary">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-secondary"></div>
+              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                <Badge className="bg-primary text-white px-4 py-1">ПОПУЛЯРНЫЙ</Badge>
+              </div>
+              <CardHeader className="text-center pb-8 pt-8">
+                <div className="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <Icon name="Star" className="text-white" size={24} />
+                </div>
+                <CardTitle className="text-2xl font-display">ПРО</CardTitle>
+                <CardDescription>Для серьезных спортсменов</CardDescription>
+                <div className="mt-4">
+                  <span className="text-4xl font-bold text-wrest-dark">5,500₽</span>
+                  <span className="text-wrest-gray">/месяц</span>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <Icon name="Check" className="text-green-500" size={18} />
+                  <span className="text-sm">Безлимитные групповые</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Icon name="Check" className="text-green-500" size={18} />
+                  <span className="text-sm">2 персональные в месяц</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Icon name="Check" className="text-green-500" size={18} />
+                  <span className="text-sm">Доступ к раздевалкам</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Icon name="Check" className="text-green-500" size={18} />
+                  <span className="text-sm">Индивидуальная программа</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Icon name="Check" className="text-green-500" size={18} />
+                  <span className="text-sm">Участие в соревнованиях</span>
+                </div>
+                <Button className="w-full mt-6 bg-primary hover:bg-primary/90">
+                  Выбрать план
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Premium Plan */}
+            <Card className="relative overflow-hidden hover:shadow-xl transition-all duration-300 border-2">
+              <CardHeader className="text-center pb-8">
+                <div className="w-16 h-16 bg-gradient-to-r from-secondary to-yellow-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <Icon name="Crown" className="text-white" size={24} />
+                </div>
+                <CardTitle className="text-2xl font-display">ЭЛИТ</CardTitle>
+                <CardDescription>Максимальный результат</CardDescription>
+                <div className="mt-4">
+                  <span className="text-4xl font-bold text-wrest-dark">8,500₽</span>
+                  <span className="text-wrest-gray">/месяц</span>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <Icon name="Check" className="text-green-500" size={18} />
+                  <span className="text-sm">Безлимитные групповые</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Icon name="Check" className="text-green-500" size={18} />
+                  <span className="text-sm">8 персональных в месяц</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Icon name="Check" className="text-green-500" size={18} />
+                  <span className="text-sm">VIP раздевалка</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Icon name="Check" className="text-green-500" size={18} />
+                  <span className="text-sm">Персональный тренер</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Icon name="Check" className="text-green-500" size={18} />
+                  <span className="text-sm">Приоритетная запись</span>
+                </div>
+                <Button className="w-full mt-6 bg-gradient-to-r from-secondary to-yellow-500 hover:opacity-90">
+                  Выбрать план
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+          
+          {/* Additional Options */}
+          <div className="mt-16 max-w-4xl mx-auto">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-display font-bold text-wrest-dark mb-4">Дополнительные услуги</h3>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <Card className="p-6">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                      <Icon name="Dumbbell" className="text-primary" size={20} />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold">Разовое занятие</h4>
+                      <p className="text-sm text-wrest-gray">Пробная тренировка</p>
+                    </div>
+                  </div>
+                  <span className="text-xl font-bold text-wrest-dark">800₽</span>
+                </div>
+              </Card>
+              
+              <Card className="p-6">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center">
+                      <Icon name="ShirtIcon" className="text-secondary" size={20} />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold">Экипировка</h4>
+                      <p className="text-sm text-wrest-gray">Борцовки, трико</p>
+                    </div>
+                  </div>
+                  <span className="text-xl font-bold text-wrest-dark">от 2500₽</span>
+                </div>
+              </Card>
+              
+              <Card className="p-6">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                      <Icon name="Users" className="text-primary" size={20} />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold">Семейный абонемент</h4>
+                      <p className="text-sm text-wrest-gray">Скидка 15% на второго</p>
+                    </div>
+                  </div>
+                  <span className="text-xl font-bold text-wrest-dark">-15%</span>
+                </div>
+              </Card>
+              
+              <Card className="p-6">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center">
+                      <Icon name="Zap" className="text-secondary" size={20} />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold">Заморозка</h4>
+                      <p className="text-sm text-wrest-gray">До 2 недель бесплатно</p>
+                    </div>
+                  </div>
+                  <span className="text-xl font-bold text-wrest-dark">Бесплатно</span>
+                </div>
+              </Card>
+            </div>
+          </div>
+          
+          <div className="text-center mt-12">
+            <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl p-8 max-w-2xl mx-auto">
+              <h3 className="text-xl font-bold text-wrest-dark mb-2">🎁 Первая тренировка бесплатно!</h3>
+              <p className="text-wrest-gray mb-4">Приходите на пробное занятие и оцените качество наших тренировок</p>
+              <Button size="lg" className="bg-primary hover:bg-primary/90">
+                <Icon name="Gift" className="mr-2" size={20} />
+                Записаться на пробную
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Gallery Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
